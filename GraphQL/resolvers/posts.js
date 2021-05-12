@@ -18,7 +18,7 @@ module.exports = {
 
         async getPosts(){
             try{
-                const posts = await Post.find({});
+                const posts = await Post.find({}).sort({createdAt: -1});
                 return posts;
             }catch(err){
                 throw new Error(err);
@@ -52,7 +52,7 @@ module.exports = {
     
           try {
             const post = await Post.findById(postId);
-            if (user.username === post.username) {
+            if (user.username === post.username) { //we only want creator of the post to be able to delete the post
               await post.delete();
               return 'Post deleted successfully';
             } else {

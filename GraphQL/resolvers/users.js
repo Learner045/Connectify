@@ -62,7 +62,7 @@ module.exports = {
                 throw new UserInputError('Errors', { errors });
             }
             
-            const user = await User.find({username});
+            const user = await User.findOne({username});
             if(user){
                 throw new UserInputError('Username is taken',{
                     errors:{
