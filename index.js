@@ -7,10 +7,12 @@ const resolvers = require('./GraphQL/resolvers');
 const { MONGODB } = require('./config.js');
 
 
+//we just take the req in object and forward to our context
 
 const server = new ApolloServer({
     typeDefs,
-    resolvers
+    resolvers,
+    context: ({req})=>({req})
 });
 
 mongoose
