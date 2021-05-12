@@ -67,12 +67,14 @@ module.exports = {
             const { username } = checkAuth(context);
       
             const post = await Post.findById(postId);
+
             if (post) {
+
               if (post.likes.find((like) => like.username === username)) {
-                // Post already likes, unlike it
+                // Post already liked by user, so unlike it - remove from likes array
                 post.likes = post.likes.filter((like) => like.username !== username);
               } else {
-                // Not liked, like post
+                // Not liked, like post - add to like array
                 post.likes.push({
                   username,
                   createdAt: new Date().toISOString()
