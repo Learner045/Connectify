@@ -6,6 +6,7 @@ import { useMutation } from '@apollo/react-hooks';
 import { useForm } from '../util/hooks';
 import { FETCH_POSTS_QUERY } from '../util/graphql';
 
+//change 2 added props
 function PostForm() {
   const { values, onChange, onSubmit } = useForm(createPostCallback, {
     body: ''
@@ -21,16 +22,19 @@ function PostForm() {
       data.getPosts = [result.data.createPost, ...data.getPosts];
       proxy.writeQuery({ query: FETCH_POSTS_QUERY, data:{
           getPosts:[result.data.createPost, ...data.getPosts],
-      }, });
+      },   });
       values.body = '';//we empty body ater submitting post
+     
     },
     onError(err){
         console.log(err)
     }
+
   });
 
   function createPostCallback() {
     createPost();
+    
   } 
 
   return (
