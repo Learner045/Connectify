@@ -27,7 +27,7 @@ function SinglePost(props) {
   const [submitComment] = useMutation(SUBMIT_COMMENT_MUTATION, {
     update() {
       setComment('');
-      commentInputRef.current.blur();
+      commentInputRef.current.blur();//blur the input after submitting
     },
     variables: {
       postId,
@@ -134,7 +134,7 @@ function SinglePost(props) {
 }
 
 const SUBMIT_COMMENT_MUTATION = gql`
-  mutation($postId: String!, $body: String!) {
+  mutation($postId: ID!, $body: String!) {
     createComment(postId: $postId, body: $body) {
       id
       comments {
