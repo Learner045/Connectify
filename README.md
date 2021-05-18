@@ -25,11 +25,11 @@ Project is created with:
 
 ## Execution
 
-to run the server
-node index or npm start
-to run the client 
-go to cd client 
-npm start
+to run the server<br>
+node index or npm start<br>
+to run the client<br>
+go to cd client <br>
+npm start<br>
 
 ## Snaps
         
