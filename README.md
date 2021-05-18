@@ -33,7 +33,8 @@ npm start
 
 ## Snaps
         
-<img src="/ss/DashboardScreen.PNG"  title="Home Screen" hspace="10" vspace="10">  <img src="/ss/post.PNG"  title="Post Screen" hspace="10" vspace="10">  <img src="/ss/register.PNG" width="500" title="Registerr" hspace="10" vspace="10">  <img src="/ss/login.PNG" width="500" title="Login" hspace="10" vspace="10">
+<img src="/ss/DashboardScreen.PNG"  title="Home Screen" hspace="10" vspace="10">  
+<img src="/ss/post.PNG"  title="Post Screen" hspace="10" vspace="10">  <img src="/ss/register.PNG"  title="Register" hspace="10" vspace="10">  <img src="/ss/login.PNG"  title="Login" hspace="10" vspace="10">
 <img src="/ss/deletepopup.PNG" width="500" title="Login" hspace="10" vspace="10"> <img src="/ss/validation.PNG" width="500" title="Validation" hspace="10" vspace="10">
 
 
