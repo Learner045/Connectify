@@ -23,6 +23,13 @@ Project is created with:
 * Validation
 * Registration/Login
 
+## Execution
+
+to run the server
+node index or npm start
+to run the client 
+go to cd client 
+npm start
 
 ## Snaps
         
