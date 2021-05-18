@@ -26,7 +26,7 @@ Project is created with:
 
 ## Snaps
         
-<img src="/ss/dashboard.PNG" width="500" title="Home Screen" hspace="10" vspace="10">  <img src="/ss/singlepost.PNG" width="300" title="Post Screen" hspace="10" vspace="10">  <img src="/ss/register.PNG" width="300" title="Registerr" hspace="10" vspace="10">  <img src="/ss/login.PNG" width="300" title="Login" hspace="10" vspace="10">
+<img src="/ss/dashboard.PNG" width="500" height="500" title="Home Screen" hspace="10" vspace="10">  <img src="/ss/singlepost.PNG" width="500" title="Post Screen" hspace="10" vspace="10">  <img src="/ss/register.PNG" width="500" title="Registerr" hspace="10" vspace="10">  <img src="/ss/login.PNG" width="500" title="Login" hspace="10" vspace="10">
 
 
 
